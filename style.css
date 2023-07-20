@@ -1,0 +1,62 @@
+html::-webkit-scrollbar{
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+  }
+  h1{
+    animation: separate 2s infinite;
+  }
+  
+  @keyframes separate {
+    0%, 100%{
+      letter-spacing: 0px;
+    }
+    50%{
+      letter-spacing: 5px;
+    }
+  }
+  
+  .carousel-item{
+    height: 450px;
+    width: 100%;
+    background: #222;
+    overflow: hidden;
+    text-align: center;
+  }
+  .carousel-item img{
+    height: 100%;
+  }
+  
+  @media only screen and (max-width: 575px){
+    body{
+      padding: 0 20px;
+    }
+    .col-xl-6{
+      padding: 20px 0;
+    }
+    .carousel-item img{
+      height: 90%;
+    }
+  
+    @keyframes separate {
+      0%, 100%{
+        font-weight: 0;
+        letter-spacing: 0px;
+      }
+      50%{
+        letter-spacing: 3px;
+      }
+    }
+  }
+  
+  
+  input{
+    padding: 5px 10px;
+  }
+  
+p{
+    text-align: center;
+}  
